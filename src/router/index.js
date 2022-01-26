@@ -1,15 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import List from '../views/List.vue'
+import Form from '../views/Form.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'list',
+    component: List
   },
+
+  {
+    path: '/form',
+    name: 'form',
+    component: Form
+  },
+
   {
     path: '/about',
     name: 'About',
